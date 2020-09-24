@@ -1,0 +1,19 @@
+## Build generated
+build/
+DerivedData/
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.DS_Store
+
+# Carthage
+Carthage/Checkouts
+Carthage/Build
