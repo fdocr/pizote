@@ -10,6 +10,24 @@
 		DC263D91251C4180002EA414 /* Pizote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC263D87251C417F002EA414 /* Pizote.framework */; };
 		DC263D96251C4180002EA414 /* PizoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC263D95251C4180002EA414 /* PizoteTests.swift */; };
 		DC263D98251C4180002EA414 /* Pizote.h in Headers */ = {isa = PBXBuildFile; fileRef = DC263D8A251C417F002EA414 /* Pizote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC263DAB251C421A002EA414 /* ForemWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC263DAA251C421A002EA414 /* ForemWebView.swift */; };
+		DC263DAC251C421A002EA414 /* ForemWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC263DAA251C421A002EA414 /* ForemWebView.swift */; };
+		DC263DB6251C42F5002EA414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC263DB5251C42F5002EA414 /* AppDelegate.swift */; };
+		DC263DB8251C42F5002EA414 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC263DB7251C42F5002EA414 /* SceneDelegate.swift */; };
+		DC263DBA251C42F5002EA414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC263DB9251C42F5002EA414 /* ViewController.swift */; };
+		DC263DBD251C42F5002EA414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC263DBB251C42F5002EA414 /* Main.storyboard */; };
+		DC263DBF251C42F7002EA414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC263DBE251C42F7002EA414 /* Assets.xcassets */; };
+		DC263DC2251C42F7002EA414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC263DC0251C42F7002EA414 /* LaunchScreen.storyboard */; };
+		DC263DCD251C42F7002EA414 /* PizoteExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC263DCC251C42F7002EA414 /* PizoteExampleTests.swift */; };
+		DC263DD8251C42F7002EA414 /* PizoteExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC263DD7251C42F7002EA414 /* PizoteExampleUITests.swift */; };
+		DC263DE8251C44EB002EA414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC263DB9251C42F5002EA414 /* ViewController.swift */; };
+		DC263DEE251C44EC002EA414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC263DB9251C42F5002EA414 /* ViewController.swift */; };
+		DC263DF5251C4557002EA414 /* Pizote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC263D87251C417F002EA414 /* Pizote.framework */; };
+		DC263DF6251C4557002EA414 /* Pizote.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC263D87251C417F002EA414 /* Pizote.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC263E0A251C49A6002EA414 /* forem.dev.html in Resources */ = {isa = PBXBuildFile; fileRef = DC263E07251C49A6002EA414 /* forem.dev.html */; };
+		DC263E0B251C49A6002EA414 /* forem.dev.html in Resources */ = {isa = PBXBuildFile; fileRef = DC263E07251C49A6002EA414 /* forem.dev.html */; };
+		DC263E15251C4BDF002EA414 /* forem.dev-logged-in.html in Resources */ = {isa = PBXBuildFile; fileRef = DC263E14251C4BDF002EA414 /* forem.dev-logged-in.html */; };
+		DC263E16251C4BDF002EA414 /* forem.dev-logged-in.html in Resources */ = {isa = PBXBuildFile; fileRef = DC263E14251C4BDF002EA414 /* forem.dev-logged-in.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,7 +38,42 @@
 			remoteGlobalIDString = DC263D86251C417F002EA414;
 			remoteInfo = Pizote;
 		};
+		DC263DC9251C42F7002EA414 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC263D7E251C417F002EA414 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC263DB2251C42F5002EA414;
+			remoteInfo = PizoteExample;
+		};
+		DC263DD4251C42F7002EA414 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC263D7E251C417F002EA414 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC263DB2251C42F5002EA414;
+			remoteInfo = PizoteExample;
+		};
+		DC263DF7251C4557002EA414 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC263D7E251C417F002EA414 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC263D86251C417F002EA414;
+			remoteInfo = Pizote;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC263DF9251C4557002EA414 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC263DF6251C4557002EA414 /* Pizote.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DC263D87251C417F002EA414 /* Pizote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pizote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +82,23 @@
 		DC263D90251C4180002EA414 /* PizoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC263D95251C4180002EA414 /* PizoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizoteTests.swift; sourceTree = "<group>"; };
 		DC263D97251C4180002EA414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC263DAA251C421A002EA414 /* ForemWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForemWebView.swift; sourceTree = "<group>"; };
+		DC263DB3251C42F5002EA414 /* PizoteExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizoteExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC263DB5251C42F5002EA414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC263DB7251C42F5002EA414 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC263DB9251C42F5002EA414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC263DBC251C42F5002EA414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC263DBE251C42F7002EA414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC263DC1251C42F7002EA414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC263DC3251C42F7002EA414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC263DC8251C42F7002EA414 /* PizoteExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizoteExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC263DCC251C42F7002EA414 /* PizoteExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizoteExampleTests.swift; sourceTree = "<group>"; };
+		DC263DCE251C42F7002EA414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC263DD3251C42F7002EA414 /* PizoteExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizoteExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC263DD7251C42F7002EA414 /* PizoteExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizoteExampleUITests.swift; sourceTree = "<group>"; };
+		DC263DD9251C42F7002EA414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC263E07251C49A6002EA414 /* forem.dev.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = forem.dev.html; sourceTree = "<group>"; };
+		DC263E14251C4BDF002EA414 /* forem.dev-logged-in.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "forem.dev-logged-in.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +117,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC263DB0251C42F5002EA414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC263DF5251C4557002EA414 /* Pizote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC263DC5251C42F7002EA414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC263DD0251C42F7002EA414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,7 +147,11 @@
 			children = (
 				DC263D89251C417F002EA414 /* Pizote */,
 				DC263D94251C4180002EA414 /* PizoteTests */,
+				DC263DB4251C42F5002EA414 /* PizoteExample */,
+				DC263DCB251C42F7002EA414 /* PizoteExampleTests */,
+				DC263DD6251C42F7002EA414 /* PizoteExampleUITests */,
 				DC263D88251C417F002EA414 /* Products */,
+				DC263DF4251C4557002EA414 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +160,9 @@
 			children = (
 				DC263D87251C417F002EA414 /* Pizote.framework */,
 				DC263D90251C4180002EA414 /* PizoteTests.xctest */,
+				DC263DB3251C42F5002EA414 /* PizoteExample.app */,
+				DC263DC8251C42F7002EA414 /* PizoteExampleTests.xctest */,
+				DC263DD3251C42F7002EA414 /* PizoteExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				DC263D8A251C417F002EA414 /* Pizote.h */,
+				DC263DAA251C421A002EA414 /* ForemWebView.swift */,
 				DC263D8B251C417F002EA414 /* Info.plist */,
 			);
 			path = Pizote;
@@ -84,6 +184,47 @@
 				DC263D97251C4180002EA414 /* Info.plist */,
 			);
 			path = PizoteTests;
+			sourceTree = "<group>";
+		};
+		DC263DB4251C42F5002EA414 /* PizoteExample */ = {
+			isa = PBXGroup;
+			children = (
+				DC263DB5251C42F5002EA414 /* AppDelegate.swift */,
+				DC263DB7251C42F5002EA414 /* SceneDelegate.swift */,
+				DC263DB9251C42F5002EA414 /* ViewController.swift */,
+				DC263DBB251C42F5002EA414 /* Main.storyboard */,
+				DC263DBE251C42F7002EA414 /* Assets.xcassets */,
+				DC263DC0251C42F7002EA414 /* LaunchScreen.storyboard */,
+				DC263DC3251C42F7002EA414 /* Info.plist */,
+			);
+			path = PizoteExample;
+			sourceTree = "<group>";
+		};
+		DC263DCB251C42F7002EA414 /* PizoteExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC263DCC251C42F7002EA414 /* PizoteExampleTests.swift */,
+				DC263E14251C4BDF002EA414 /* forem.dev-logged-in.html */,
+				DC263E07251C49A6002EA414 /* forem.dev.html */,
+				DC263DCE251C42F7002EA414 /* Info.plist */,
+			);
+			path = PizoteExampleTests;
+			sourceTree = "<group>";
+		};
+		DC263DD6251C42F7002EA414 /* PizoteExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC263DD7251C42F7002EA414 /* PizoteExampleUITests.swift */,
+				DC263DD9251C42F7002EA414 /* Info.plist */,
+			);
+			path = PizoteExampleUITests;
+			sourceTree = "<group>";
+		};
+		DC263DF4251C4557002EA414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +277,61 @@
 			productReference = DC263D90251C4180002EA414 /* PizoteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DC263DB2251C42F5002EA414 /* PizoteExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC263DDA251C42F7002EA414 /* Build configuration list for PBXNativeTarget "PizoteExample" */;
+			buildPhases = (
+				DC263DAF251C42F5002EA414 /* Sources */,
+				DC263DB0251C42F5002EA414 /* Frameworks */,
+				DC263DB1251C42F5002EA414 /* Resources */,
+				DC263DF9251C4557002EA414 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC263DF8251C4557002EA414 /* PBXTargetDependency */,
+			);
+			name = PizoteExample;
+			productName = PizoteExample;
+			productReference = DC263DB3251C42F5002EA414 /* PizoteExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC263DC7251C42F7002EA414 /* PizoteExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC263DDD251C42F7002EA414 /* Build configuration list for PBXNativeTarget "PizoteExampleTests" */;
+			buildPhases = (
+				DC263DC4251C42F7002EA414 /* Sources */,
+				DC263DC5251C42F7002EA414 /* Frameworks */,
+				DC263DC6251C42F7002EA414 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC263DCA251C42F7002EA414 /* PBXTargetDependency */,
+			);
+			name = PizoteExampleTests;
+			productName = PizoteExampleTests;
+			productReference = DC263DC8251C42F7002EA414 /* PizoteExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC263DD2251C42F7002EA414 /* PizoteExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC263DE0251C42F7002EA414 /* Build configuration list for PBXNativeTarget "PizoteExampleUITests" */;
+			buildPhases = (
+				DC263DCF251C42F7002EA414 /* Sources */,
+				DC263DD0251C42F7002EA414 /* Frameworks */,
+				DC263DD1251C42F7002EA414 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC263DD5251C42F7002EA414 /* PBXTargetDependency */,
+			);
+			name = PizoteExampleUITests;
+			productName = PizoteExampleUITests;
+			productReference = DC263DD3251C42F7002EA414 /* PizoteExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,9 +343,21 @@
 				TargetAttributes = {
 					DC263D86251C417F002EA414 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					DC263D8F251C4180002EA414 = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					DC263DB2251C42F5002EA414 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					DC263DC7251C42F7002EA414 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = DC263DB2251C42F5002EA414;
+					};
+					DC263DD2251C42F7002EA414 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = DC263DB2251C42F5002EA414;
 					};
 				};
 			};
@@ -168,6 +376,9 @@
 			targets = (
 				DC263D86251C417F002EA414 /* Pizote */,
 				DC263D8F251C4180002EA414 /* PizoteTests */,
+				DC263DB2251C42F5002EA414 /* PizoteExample */,
+				DC263DC7251C42F7002EA414 /* PizoteExampleTests */,
+				DC263DD2251C42F7002EA414 /* PizoteExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +398,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC263DB1251C42F5002EA414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC263DC2251C42F7002EA414 /* LaunchScreen.storyboard in Resources */,
+				DC263DBF251C42F7002EA414 /* Assets.xcassets in Resources */,
+				DC263DBD251C42F5002EA414 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC263DC6251C42F7002EA414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC263E15251C4BDF002EA414 /* forem.dev-logged-in.html in Resources */,
+				DC263E0A251C49A6002EA414 /* forem.dev.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC263DD1251C42F7002EA414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC263E16251C4BDF002EA414 /* forem.dev-logged-in.html in Resources */,
+				DC263E0B251C49A6002EA414 /* forem.dev.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC263DAB251C421A002EA414 /* ForemWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +442,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC263D96251C4180002EA414 /* PizoteTests.swift in Sources */,
+				DC263DAC251C421A002EA414 /* ForemWebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC263DAF251C42F5002EA414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC263DBA251C42F5002EA414 /* ViewController.swift in Sources */,
+				DC263DB6251C42F5002EA414 /* AppDelegate.swift in Sources */,
+				DC263DB8251C42F5002EA414 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC263DC4251C42F7002EA414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC263DE8251C44EB002EA414 /* ViewController.swift in Sources */,
+				DC263DCD251C42F7002EA414 /* PizoteExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC263DCF251C42F7002EA414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC263DEE251C44EC002EA414 /* ViewController.swift in Sources */,
+				DC263DD8251C42F7002EA414 /* PizoteExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +482,41 @@
 			target = DC263D86251C417F002EA414 /* Pizote */;
 			targetProxy = DC263D92251C4180002EA414 /* PBXContainerItemProxy */;
 		};
+		DC263DCA251C42F7002EA414 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC263DB2251C42F5002EA414 /* PizoteExample */;
+			targetProxy = DC263DC9251C42F7002EA414 /* PBXContainerItemProxy */;
+		};
+		DC263DD5251C42F7002EA414 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC263DB2251C42F5002EA414 /* PizoteExample */;
+			targetProxy = DC263DD4251C42F7002EA414 /* PBXContainerItemProxy */;
+		};
+		DC263DF8251C4557002EA414 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC263D86251C417F002EA414 /* Pizote */;
+			targetProxy = DC263DF7251C4557002EA414 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC263DBB251C42F5002EA414 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC263DBC251C42F5002EA414 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC263DC0251C42F7002EA414 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC263DC1251C42F7002EA414 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DC263D99251C4180002EA414 /* Debug */ = {
@@ -341,6 +644,7 @@
 		DC263D9C251C4180002EA414 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = R9SWHSQNV8;
@@ -357,6 +661,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.forem.pizote.Pizote;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +670,7 @@
 		DC263D9D251C4180002EA414 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = R9SWHSQNV8;
@@ -389,6 +695,7 @@
 		DC263D9F251C4180002EA414 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R9SWHSQNV8;
 				INFOPLIST_FILE = PizoteTests/Info.plist;
@@ -407,6 +714,7 @@
 		DC263DA0251C4180002EA414 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R9SWHSQNV8;
 				INFOPLIST_FILE = PizoteTests/Info.plist;
@@ -419,6 +727,128 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC263DDB251C42F7002EA414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9SWHSQNV8;
+				INFOPLIST_FILE = PizoteExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forem.pizote.PizoteExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC263DDC251C42F7002EA414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9SWHSQNV8;
+				INFOPLIST_FILE = PizoteExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forem.pizote.PizoteExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC263DDE251C42F7002EA414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9SWHSQNV8;
+				INFOPLIST_FILE = PizoteExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forem.pizote.PizoteExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PizoteExample.app/PizoteExample";
+			};
+			name = Debug;
+		};
+		DC263DDF251C42F7002EA414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9SWHSQNV8;
+				INFOPLIST_FILE = PizoteExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forem.pizote.PizoteExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PizoteExample.app/PizoteExample";
+			};
+			name = Release;
+		};
+		DC263DE1251C42F7002EA414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9SWHSQNV8;
+				INFOPLIST_FILE = PizoteExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forem.pizote.PizoteExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PizoteExample;
+			};
+			name = Debug;
+		};
+		DC263DE2251C42F7002EA414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9SWHSQNV8;
+				INFOPLIST_FILE = PizoteExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forem.pizote.PizoteExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PizoteExample;
 			};
 			name = Release;
 		};
@@ -448,6 +878,33 @@
 			buildConfigurations = (
 				DC263D9F251C4180002EA414 /* Debug */,
 				DC263DA0251C4180002EA414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC263DDA251C42F7002EA414 /* Build configuration list for PBXNativeTarget "PizoteExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC263DDB251C42F7002EA414 /* Debug */,
+				DC263DDC251C42F7002EA414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC263DDD251C42F7002EA414 /* Build configuration list for PBXNativeTarget "PizoteExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC263DDE251C42F7002EA414 /* Debug */,
+				DC263DDF251C42F7002EA414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC263DE0251C42F7002EA414 /* Build configuration list for PBXNativeTarget "PizoteExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC263DE1251C42F7002EA414 /* Debug */,
+				DC263DE2251C42F7002EA414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

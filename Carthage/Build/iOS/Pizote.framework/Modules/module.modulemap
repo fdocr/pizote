@@ -1,0 +1,11 @@
+framework module Pizote {
+  umbrella header "Pizote.h"
+
+  export *
+  module * { export * }
+}
+
+module Pizote.Swift {
+    header "Pizote-Swift.h"
+    requires objc
+}
