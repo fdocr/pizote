@@ -220,6 +220,13 @@ SWIFT_CLASS("_TtC6Pizote12ForemWebView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
 @end
 
+@class WKUserContentController;
+@class WKScriptMessage;
+
+@interface ForemWebView (SWIFT_EXTENSION(Pizote)) <WKScriptMessageHandler>
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -443,6 +450,13 @@ SWIFT_CLASS("_TtC6Pizote12ForemWebView")
 @interface ForemWebView : WKWebView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
+@end
+
+@class WKUserContentController;
+@class WKScriptMessage;
+
+@interface ForemWebView (SWIFT_EXTENSION(Pizote)) <WKScriptMessageHandler>
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
 
 #if __has_attribute(external_source_symbol)

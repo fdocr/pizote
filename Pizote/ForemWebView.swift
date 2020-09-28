@@ -8,6 +8,11 @@
 
 import UIKit
 import WebKit
+import AVKit
+
+public protocol ForemWebViewDelegate: class {
+    func willStartNativeVideo(playerController: AVPlayerViewController)
+}
 
 public struct UserData: Codable {
     enum CodingKeys: String, CodingKey {
@@ -19,6 +24,15 @@ public struct UserData: Codable {
 }
 
 open class ForemWebView: WKWebView {
+
+    var foremWebViewDelegate: ForemWebViewDelegate?
+    var videoPlayerLayer: AVPlayerLayer?
+    open var baseHost: String?
+    
+    lazy var mediaManager: ForemMediaManager = {
+        return ForemMediaManager(webView: self)
+    }()
+    
     required public init?(coder: NSCoder) {
         super.init(coder: coder)
         setupConfigurationIfInvertedColorsEnabled()
@@ -28,13 +42,16 @@ open class ForemWebView: WKWebView {
         super.init(frame: frame, configuration: configuration)
     }
 
-    func setup(navigationDelegate: WKNavigationDelegate, messageHandler: WKScriptMessageHandler) {
-        customUserAgent = "forem-ios"
+    open func setup(navigationDelegate: WKNavigationDelegate, foremWebViewDelegate: ForemWebViewDelegate) {
+        customUserAgent = "forem-native-ios"
         self.navigationDelegate = navigationDelegate
+        self.foremWebViewDelegate = foremWebViewDelegate
 
-        configuration.userContentController.add(messageHandler, name: "haptic")
-        configuration.userContentController.add(messageHandler, name: "podcast")
-        configuration.userContentController.add(messageHandler, name: "video")
+        configuration.userContentController.add(self, name: "haptic")
+        configuration.userContentController.add(self, name: "podcast")
+        if AVPictureInPictureController.isPictureInPictureSupported() {
+            configuration.userContentController.add(self, name: "video")
+        }
 
         configuration.allowsInlineMediaPlayback = true
         configuration.mediaTypesRequiringUserActionForPlayback = []
@@ -45,12 +62,15 @@ open class ForemWebView: WKWebView {
         if let url = URL(string: urlString) {
             let request = URLRequest(url: url)
             load(request)
+            if baseHost == nil {
+                baseHost = url.host
+            }
         }
     }
 
     open func fetchUserStatus(completion: @escaping (String?) -> Void) {
         let javascript = "document.getElementsByTagName('body')[0].getAttribute('data-user-status')"
-        evaluateJavaScript(javascript) { result, error in
+        evaluateJavaScript(wrappedJS(javascript)) { result, error in
             guard error == nil, let jsonString = result as? String else {
                 print("Error getting user data: \(String(describing: error))")
                 completion(nil)
@@ -62,7 +82,7 @@ open class ForemWebView: WKWebView {
 
     open func fetchUserData(completion: @escaping (UserData?) -> Void) {
         let javascript = "document.getElementsByTagName('body')[0].getAttribute('data-user')"
-        evaluateJavaScript(javascript) { result, error in
+        evaluateJavaScript(wrappedJS(javascript)) { result, error in
             guard error == nil, let jsonString = result as? String else {
                 print("Error getting user data: \(String(describing: error))")
                 completion(nil)
@@ -92,7 +112,7 @@ open class ForemWebView: WKWebView {
         } else if type == "video" {
             javascript = "document.getElementById('video-player-source').setAttribute('data-message', '\(jsonString)')"
         }
-        evaluateJavaScript(javascript) { _, error in
+        evaluateJavaScript(wrappedJS(javascript)) { _, error in
             if let error = error {
                 print("Error sending Podcast message (\(message)): \(error.localizedDescription)")
             }
@@ -101,7 +121,7 @@ open class ForemWebView: WKWebView {
 
     open func shouldUseShellShadow(completion: @escaping (Bool) -> Void) {
         let javascript = "document.getElementById('page-content').getAttribute('data-current-page')"
-        evaluateJavaScript(javascript) { result, error in
+        evaluateJavaScript(wrappedJS(javascript)) { result, error in
             guard error == nil, let result = result as? String else {
                 print("Error getting 'page-content' - 'data-current-page': \(String(describing: error))")
                 completion(true)
@@ -114,6 +134,20 @@ open class ForemWebView: WKWebView {
                 completion(false)
             }
         }
+    }
+    
+    func closePodcastUI() {
+        let javascript = "document.getElementById('closebutt').click()"
+        evaluateJavaScript(wrappedJS(javascript)) { result, error in
+            guard error == nil else {
+                print("Error closing Podast: \(String(describing: error))")
+                return
+            }
+        }
+    }
+    
+    private func wrappedJS(_ javascript: String) -> String {
+        return "try { \(javascript) } catch (err) { console.log(err) }"
     }
     
     private func setShellShadow(_ useShadow: Bool) {

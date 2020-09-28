@@ -8,10 +8,10 @@
   "tvOS" : [
 
   ],
-  "commitish" : "v0.1",
+  "commitish" : "0.2",
   "iOS" : [
     {
-      "hash" : "86222c861324408b00f1af9d699256cef9b0750126c47f12bd9a3560531e8bf0",
+      "hash" : "2137057f1be2688d0d55c6bafae51aa15f00db568a23f4cbc2a06df67a1da170",
       "name" : "Pizote",
       "linking" : "dynamic",
       "swiftToolchainVersion" : "5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
